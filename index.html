@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMI calcultor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>BMI calculator</h2>
+      <h4>Body Mass Index Calculator</h4>
+    </header>
+    <main>
+      <form action="" method="post">
+        <label for="name">Enter your Name:</label>
+        <input type="text" name="name" id="name" />
+        <br />
+        <label for="gender">Select your gender:</label>
+        <input type="radio" name="gender" id="gender" />Male
+        <input type="radio" name="gender" id="gender" />Female
+        <br />
+        <label for="age">Age(in years):</label>
+        <input type="number" min="1" name="age" id="age" />
+        <br />
+        <label for="height">Height(in cm):</label>
+        <input type="number" min="10" name="height" id="height" />
+        <br />
+        <label for="weight">Weight(in kg):</label>
+        <input type="number" min="1" name="weight" id="weight" />
+
+        <input type="submit" value="Calculate BMI" />
+      </form>
+    </main>
+  </body>
+</html>
