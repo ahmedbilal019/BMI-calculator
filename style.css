@@ -27,6 +27,7 @@ form {
   justify-content: center;
   gap: 10px;
 }
+
 header {
   display: flex;
   flex-direction: row;
@@ -38,11 +39,11 @@ input {
   border: none;
   background-color: whitesmoke;
   border-radius: 5px;
-  border-bottom: 1.5px solid gray;
+  border-bottom: 2px solid gray;
   padding: 4px;
 }
 input:focus {
-  border-bottom: 1.5px solid blue;
+  border-bottom: 2px solid blue;
   outline: none;
 }
 button {

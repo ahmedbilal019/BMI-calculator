@@ -13,38 +13,39 @@
         <img src="assets/BMI logo.png" alt="" width="100px" height="100px" />
       </header>
 
-      <form action="" method="">
+      <form action="">
         <div>
-          <label for="name">Your Name:</label>
-          <input type="text" name="name" id="name" />
+          <label for="user-name">Your Name:</label>
+          <input type="text" name="user-name" id="user-name" />
         </div>
 
         <div>
           <label for="gender">Your gender:</label>
-          <input type="radio" name="gender" id="gender" />Male
-          <input type="radio" name="gender" id="gender" />Female
+          <input type="radio" name="gender" id="gender" value="male" />Male
+          <input type="radio" name="gender" id="gender" value="Female" />Female
         </div>
 
         <div>
-          <label for="age">Age(in years):</label>
+          <label for="age">Age <i>(in years)</i>:</label>
           <input type="number" min="1" name="age" id="age" />
         </div>
 
         <div>
-          <label for="height">Height(in cm):</label>
+          <label for="height">Height <i>(in meters)</i>:</label>
           <input type="number" min="10" name="height" id="height" />
         </div>
 
         <div>
-          <label for="weight">Weight(in kg):</label>
+          <label for="weight">Weight <i>(in kilograms)</i>:</label>
           <input type="number" min="1" name="weight" id="weight" />
         </div>
 
-        <button>Calculate BMI</button>
+        <button onclick="cal()" type="button">Calculate BMI</button>
       </form>
     </div>
     <div class="results">
       <h2>Results:</h2>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
