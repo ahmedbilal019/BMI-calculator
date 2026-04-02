@@ -3,34 +3,48 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BMI calcultor</title>
+    <title>BMI Calcultor</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <h2>BMI calculator</h2>
-      <h4>Body Mass Index Calculator</h4>
-    </header>
-    <main>
-      <form action="" method="post">
-        <label for="name">Enter your Name:</label>
-        <input type="text" name="name" id="name" />
-        <br />
-        <label for="gender">Select your gender:</label>
-        <input type="radio" name="gender" id="gender" />Male
-        <input type="radio" name="gender" id="gender" />Female
-        <br />
-        <label for="age">Age(in years):</label>
-        <input type="number" min="1" name="age" id="age" />
-        <br />
-        <label for="height">Height(in cm):</label>
-        <input type="number" min="10" name="height" id="height" />
-        <br />
-        <label for="weight">Weight(in kg):</label>
-        <input type="number" min="1" name="weight" id="weight" />
+    <div class="container">
+      <header>
+        <h1>BMI Calculator</h1>
+        <img src="assets/BMI logo.png" alt="" width="100px" height="100px" />
+      </header>
 
-        <input type="submit" value="Calculate BMI" />
+      <form action="" method="">
+        <div>
+          <label for="name">Your Name:</label>
+          <input type="text" name="name" id="name" />
+        </div>
+
+        <div>
+          <label for="gender">Your gender:</label>
+          <input type="radio" name="gender" id="gender" />Male
+          <input type="radio" name="gender" id="gender" />Female
+        </div>
+
+        <div>
+          <label for="age">Age(in years):</label>
+          <input type="number" min="1" name="age" id="age" />
+        </div>
+
+        <div>
+          <label for="height">Height(in cm):</label>
+          <input type="number" min="10" name="height" id="height" />
+        </div>
+
+        <div>
+          <label for="weight">Weight(in kg):</label>
+          <input type="number" min="1" name="weight" id="weight" />
+        </div>
+
+        <button>Calculate BMI</button>
       </form>
-    </main>
+    </div>
+    <div class="results">
+      <h2>Results:</h2>
+    </div>
   </body>
 </html>
