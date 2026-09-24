@@ -4,7 +4,7 @@ let gender = document.getElementById("gender");
 let age = document.getElementById("age");
 let height = document.getElementById("height");
 let weight = document.getElementById("weight");
-
+let result = document.getElementById("results");
 function cal() {
   let w = Number(weight.value);
   let h = Number(height.value);
@@ -14,8 +14,12 @@ function cal() {
   // converting height into meters
   h = h / 100;
   let BMI = w / (h * h);
+  if (BMI > 0) {
+    result.innerText = BMI.toFixed(2);
+  } else {
+    result.innerText = "00.0";
+  }
 
-  let result = BMI.toFixed(2);
   console.log(typeof BMI);
   console.log(username.value);
   console.log(gender.value);
