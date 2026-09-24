@@ -14,6 +14,7 @@
 
     <form action="">
       <div>
+        <label for="gender">Gender: </label>
         <input type="radio" name="gender" id="gender" value="male" />Male
         <input type="radio" name="gender" id="gender" value="Female" />Female
       </div>
@@ -34,12 +35,12 @@
       </div>
 
       <button onclick="cal()" type="button">Calculate BMI</button>
+      <div class="results">
+        <h2>Results:</h2>
+        <h2 id="results">00.0</h2>
+      </div>
     </form>
 
-    <div class="results">
-      <h2>Results:</h2>
-      <p id="results">00.0</p>
-    </div>
     <script src="script.js"></script>
   </body>
 </html>
