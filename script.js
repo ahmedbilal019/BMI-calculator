@@ -5,6 +5,7 @@ let age = document.getElementById("age");
 let height = document.getElementById("height");
 let weight = document.getElementById("weight");
 let result = document.getElementById("results");
+let message = document.getElementById("message");
 function cal() {
   let w = Number(weight.value);
   let h = Number(height.value);
@@ -16,6 +17,15 @@ function cal() {
   let BMI = w / (h * h);
   if (BMI > 0) {
     result.innerText = BMI.toFixed(2) + "(kg/m²)";
+    if (BMI < 18.5) {
+      message.innerText += "\nYou are underweight.";
+    } else if (BMI < 25) {
+      message.innerText += "\nYour weight is normal.";
+    } else if (BMI < 30) {
+      message.innerText += "\nYou are overweight.";
+    } else {
+      message.innerText += "\nYou are obese.";
+    }
   } else {
     result.innerText = "00.0";
   }
