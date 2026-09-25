@@ -15,7 +15,7 @@ function cal() {
   h = h / 100;
   let BMI = w / (h * h);
   if (BMI > 0) {
-    result.innerText = BMI.toFixed(2);
+    result.innerText = BMI.toFixed(2) + "(kg/m²)";
   } else {
     result.innerText = "00.0";
   }

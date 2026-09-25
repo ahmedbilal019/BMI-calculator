@@ -10,8 +10,9 @@ h4 {
   color: white;
   text-align: center;
 }
+
 form {
-  background-color: white;
+  background-color: lightgray;
   padding: 50px 30px;
   border: 1px solid black;
   max-width: 500px;
@@ -33,6 +34,11 @@ form div {
 label {
   display: flex;
   align-items: flex-start;
+  width: 100px;
+}
+form .gender {
+  display: flex;
+  gap: 55px;
 }
 header {
   display: flex;
@@ -43,13 +49,13 @@ header {
 input {
   font-size: 20px;
   border: none;
-  background-color: whitesmoke;
+  background-color: white;
   border-radius: 5px;
-  border-bottom: 2px solid gray;
+  border-bottom: 0.1px solid gray;
   padding: 4px;
 }
 input:focus {
-  border-bottom: 2px solid blue;
+  border-bottom: 0.1px solid blue;
   outline: none;
 }
 button {
@@ -63,21 +69,43 @@ button {
   margin-top: 10px;
 }
 button:hover {
-  border: 1px solid green;
+  background-color: green;
+  color: white;
 }
 .results {
   color: blue;
 }
-label{
-width: 100px;
-}
+
 @media screen and (max-width: 320px) {
   .form {
     padding: 50px 10px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 10px;
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+  }
+  form div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  label {
+    width: auto;
+    flex-direction: row;
+  }
+  form .gender {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .gender div {
+    display: flex;
+    flex-direction: row;
   }
 }

@@ -13,31 +13,38 @@
     </header>
 
     <form action="">
-      <div>
+      <div class="gender">
         <label for="gender">Gender: </label>
-        <input type="radio" name="gender" id="gender" value="male" />Male
-        <input type="radio" name="gender" id="gender" value="Female" />Female
+        <div>
+          <input type="radio" name="gender" id="gender" value="male" />Male
+        </div>
+        <div>
+          <input type="radio" name="gender" id="gender" value="Female" />Female
+        </div>
       </div>
 
       <div>
         <label for="age">Age: </label>
-        <input type="number" min="1" name="age" id="age" />
+        <input type="number" min="1" name="age" id="age" required />
       </div>
 
       <div>
         <label for="height">Height(cm): </label>
-        <input type="number" min="10" name="height" id="height" />
+        <input type="number" min="10" name="height" id="height" required />
       </div>
 
       <div>
         <label for="weight">Weight <i>(kg)</i>:</label>
-        <input type="number" min="1" name="weight" id="weight" />
+        <input type="number" min="1" name="weight" id="weight" required />
       </div>
 
       <button onclick="cal()" type="button">Calculate BMI</button>
       <div class="results">
         <h2>Results:</h2>
         <h2 id="results">00.0</h2>
+      </div>
+      <div>
+        <p>You are overweight.</p>
       </div>
     </form>
 
