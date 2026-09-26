@@ -18,13 +18,17 @@ function cal() {
   if (BMI > 0) {
     result.innerText = BMI.toFixed(2) + "(kg/m²)";
     if (BMI < 18.5) {
-      message.innerText += "\nYou are underweight.";
+      message.innerText = "You are underweight.";
+      message.style.color = "gray";
     } else if (BMI < 25) {
-      message.innerText += "\nYour weight is normal.";
+      message.innerText = "Your weight is normal.";
+      message.style.color = "green";
     } else if (BMI < 30) {
-      message.innerText += "\nYou are overweight.";
+      message.innerText = "You are overweight.";
+      message.style.color = "red";
     } else {
-      message.innerText += "\nYou are obese.";
+      message.innerText = "You are obese.";
+      message.style.color = "red";
     }
   } else {
     result.innerText = "00.0";

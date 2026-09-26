@@ -6,10 +6,6 @@
 h2 {
   text-align: center;
 }
-h4 {
-  color: white;
-  text-align: center;
-}
 
 form {
   background-color: lightgray;
@@ -75,7 +71,6 @@ button:hover {
 .results {
   color: blue;
 }
-
 @media screen and (max-width: 320px) {
   .form {
     padding: 50px 10px;
