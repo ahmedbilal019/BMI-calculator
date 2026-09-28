@@ -6,15 +6,21 @@ let height = document.getElementById("height");
 let weight = document.getElementById("weight");
 let result = document.getElementById("results");
 let message = document.getElementById("message");
+
 function cal() {
   let w = Number(weight.value);
   let h = Number(height.value);
-  if (h <= 0 || w <= 0) {
-    alert("enter a valid value of height and weight.");
+  let a = Number(age.value);
+  if (h <= 0 || w <= 0 || a <= 0) {
+    alert("enter a valid value of height,weight and age.");
+    result.innerText = "00";
+    return;
   }
-  // converting height into meters
   h = h / 100;
   let BMI = w / (h * h);
+
+  // converting height into meters
+
   if (BMI > 0) {
     result.innerText = BMI.toFixed(2) + "(kg/m²)";
     if (BMI < 18.5) {
